@@ -1,5 +1,5 @@
 let express = require('express');
-let mysql = require('../lib/basicMysqlConnection');
+let mysql = require('../config/basicMysqlConnection');
 
 let user = {
   index: '',
@@ -46,7 +46,7 @@ let user = {
     }
   },
 };
-//参数过滤
+/*//参数过滤
 function filter(arguments, obj) {
   let newObj = {}
   arguments.forEach(every =&gt; {
@@ -55,5 +55,5 @@ function filter(arguments, obj) {
   }
 });
   return newObj;
-};
+};*/
 module.exports = user;
