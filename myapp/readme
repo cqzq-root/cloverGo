@@ -1,0 +1,8 @@
+config 配置文件
+lib  依赖文件
+public  公用css,js,img等资源
+view 视图
+routes 路由配置
+table 映射mysql表格
+app  程序入口
+
