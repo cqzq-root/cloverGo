@@ -4,7 +4,7 @@ let user = require('../table/userTable');
 let mysql = require('../lib/mysql');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  let userSelect = user.select('id',2)
+  let userSelect = user.select('id',2)//封装sql语句
   let b = mysql.query(userSelect,function (err,rows) {
     console.log('陈庆')
     console.log(err,rows)

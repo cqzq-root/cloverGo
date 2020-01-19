@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var rootConfig = require('./lib/rootConfig');
 var app = express();
-var cors = require('cors');
+var cors = require('cors');//解决访问跨越的问题
 //跨域
 app.use(cors({
   origin:['http://localhost:8081'],
